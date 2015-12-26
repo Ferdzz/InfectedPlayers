@@ -1,0 +1,10 @@
+main: com.ferdz.infectedplayers.InfectedPlayers
+name: InfectedPlayers
+version: 1.0
+author: Ferdz
+description: Spawns zombies with custom names if players turn
+commands:
+   infectedplayers:
+      description: Help
+      usage: /<command>
+      aliases: [ip]

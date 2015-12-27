@@ -53,6 +53,10 @@ public class PlayerHandler implements Listener {
 			entity.getEquipment().setArmorContents(equip.getArmorContents());
 			entity.getEquipment().setItemInHand(equip.getItemInHand());
 			
+			for (ItemStack is : equip.getArmorContents()) {
+				e.getDrops().remove(is);
+			}
+			
 			InfectedPlayers.infectedPlayers.remove(p.getUniqueId());
 		}
 	}
